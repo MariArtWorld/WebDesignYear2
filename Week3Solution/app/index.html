@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week Solution</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="./js/app.js"></script>
+    <script src="./js/week-three-controller.js"></script>
+
+</head>
+
+<body>
+    <div ng-controller="WeekThreeController">
+        <div id="phones">
+
+            <h2>List of phones</h2>
+
+            <div>
+                <ul>
+                    <li ng-repeat="phone in phones">
+                        {{phone.name}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="flowers">
+            <h2>List of phones</h2>
+            <div>
+                <ul>
+                    <li ng-repeat="picture in pictures">
+                        <img ng-src="{{picture.webformatURL}}"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
