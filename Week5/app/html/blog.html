@@ -1,0 +1,9 @@
+<div ng-controller="myController">
+<h2> My Blog </h2>
+<div ng-repeat="post in posts">
+  <a href="index.html#/blog#{{post.id}}"><strong>{{post.title}}</strong> by {{post.author}}</a>
+</div>
+<blog-post></blog-post>
+
+
+</div>
