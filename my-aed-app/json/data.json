@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1",
+        "name": "Mercer's medical center",
+        "information": "Monday to Friday. 9 to 5",
+        "location": {
+            "lat": 53.340377,
+            "lng": -6.263283
+        }
+    },
+    {
+        "id": "2",
+        "name": "Dublin Dental University Hospital",
+        "information": "Monday to Friday: 9 to 5. Saturdays: 10 to 4",
+        "location": {
+            "lat": 53.343144,
+            "lng": -6.251954
+        }
+    },
+    {
+        "id": "3",
+        "name": "Dublin National Maternity Hospital",
+        "information": "All year around. 24/7",
+        "location": {
+            "lat": 53.340480,
+            "lng": -6.246289
+        }
+    }
+]

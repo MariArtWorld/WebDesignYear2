@@ -1,0 +1,17 @@
+<ion-view title="CPR Instruccions">
+     <ion-content>
+       <div class="card" ng-repeat="x in steps">
+   <div class="item ">
+     <h2> {{x.title}} </h2>
+   </div>
+
+   <div class="item item-body">
+     <img ng-src="{{x.picture}}"/>
+      <p>
+        {{x.instructions}}
+      </p></div>
+
+
+
+      </ion-content>
+ </ion-view>
