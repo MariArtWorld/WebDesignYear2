@@ -23,15 +23,15 @@ angular.module("app")
             $scope.places.forEach(function(place){
                 addMarker(place);
 
-                var flightPath = new google.maps.Polyline({
-                  path: [dublin, place.location],
-                  geodesic: true,
-                  strokeColor: '#FF0000',
-                  strokeOpacity: 1.0,
-                  strokeWeight: 2
-                });
+                // var flightPath = new google.maps.Polyline({
+                //   path: [dublin, place.location],
+                //   geodesic: true,
+                //   strokeColor: '#FF0000',
+                //   strokeOpacity: 1.0,
+                //   strokeWeight: 2
+                // });
 
-                flightPath.setMap(map);
+                // flightPath.setMap(map);
             })
          });
 
@@ -48,7 +48,7 @@ angular.module("app")
                  }
              });
 
-             var aedInfo = "<h2>" + place.name + "</h2>" + place.information /*+ "  <a class='button button-small button-assertive' href='#/directions1'>Go</a>"*/;
+             var aedInfo = "<h2>" + place.name + "</h2>" + place.information + "  <a class='button button-small button-assertive' href='#/tab/map/direction1'>Go</a>";
 
              google.maps.event.addListener(marker, 'click', function () {
                      infoWindow.setContent(aedInfo);

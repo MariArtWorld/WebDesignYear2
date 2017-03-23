@@ -5,9 +5,9 @@ angular.module("app")
         var dublin = { lat: 53.3416542, lng: -6.2570467 };
         var infoWindow = new google.maps.InfoWindow();
 
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new google.maps.Map(document.getElementById('map2'), {
             center: dublin,
-            zoom: 14,
+            zoom: 16,
             scrollwheel: false,
             navigationControl: false,
             mapTypeControl: false,

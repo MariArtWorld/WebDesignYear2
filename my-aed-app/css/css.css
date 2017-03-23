@@ -1,6 +1,9 @@
 #map {
       height: 100vh;
     }
+    #map2 {
+          height: 100vh;
+        }
 ion-content {
 background-color: #031b42
 }

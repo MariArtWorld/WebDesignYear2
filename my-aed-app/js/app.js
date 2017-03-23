@@ -24,6 +24,15 @@
         }
       }
     })
+              .state('tabs.map.direction1', {
+                url:'/direction1',
+                views: {
+                  'map-tab@tabs': {
+                    templateUrl: 'templates/direction1.html',
+                    controller: 'directionController'
+                  }
+                }
+              })
 
     .state('tabs.cpr1', {
       url: "/cpr",
@@ -33,14 +42,7 @@
       controller: "otherController"
   }  }})
 
-  .state('directions1', {
-    url:'/directions1',
-    views:{
-    'directions1':{
-    templateUrl: 'templates/direction1.html',
-    controller: "directionController"
-  }}
-  })
+
 
 
       $urlRouterProvider.otherwise("/tab/home");
